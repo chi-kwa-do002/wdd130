@@ -1,3 +1,11 @@
+:root{
+    --width: 150px;
+    --border: 1px solid black;
+    --height: auto;
+
+}
+
+
 nav{
     background-color: darkblue;
     padding: 10px;
@@ -10,19 +18,19 @@ nav a{
 main{
     max-width: 840px;
 }main img{
-    width: 150px;
-    height: auto;
+    width: var(--width);
+    height: var(--height);
     padding: 2px;
-    border: 1px solid black;
+    border: var(--border);
     box-shadow: 0 0 30px gray;
 }
 h1{
     color: darkblue;
 }
 img{
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
+    width: var(--width);
+    height: var(--height);
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
