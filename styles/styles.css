@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --width: 150px;
     --border: 1px solid black;
@@ -18,6 +24,7 @@ nav a{
 main{
     max-width: 840px;
 }main img{
+    float: right;
     width: var(--width);
     height: var(--height);
     padding: 2px;
@@ -36,16 +43,23 @@ img{
 }
 aside{
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0/ 0.2); 
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    position: relative;
+    /* margin: 1rem; */
+    /* border: 1px solid rgb(0 0 0/ 0.2);  */
+    /* padding: 1rem; */
+    /* background-color: #eee; */
+    /* color: #333; */
+    /* text-align: center; */
 }
-aside img{
+aside h2 {
+  position: absolute;
+  top: 23px;
+  left: 125px;
+}
+aside img{  
     width: 200px;
     height: auto;
+    text-align: center;
 }
 p {
     padding: 0;
@@ -53,5 +67,15 @@ p {
 footer{
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* class selector */
+.box{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+    color: #000;
     text-align: center;
 }
