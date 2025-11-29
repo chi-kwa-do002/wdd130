@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
+    display: flex;
 }
 
 .flex-container {
@@ -8,6 +9,7 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+   
 }
 
 .flex-item {
